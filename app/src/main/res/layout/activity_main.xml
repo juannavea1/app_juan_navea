@@ -24,6 +24,18 @@
         tools:layout_editor_absoluteX="303dp"
         tools:layout_editor_absoluteY="534dp" />
 
+    <ScrollView
+        android:layout_width="271dp"
+        android:layout_height="364dp"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="142dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
