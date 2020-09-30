@@ -7,20 +7,34 @@
     tools:context=".MainActivity">
 
         <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            tools:layout_editor_absoluteX="80dp"
-            tools:layout_editor_absoluteY="114dp"
-            tools:ignore="MissingConstraints" />
+        android:id="@id/text1"
+        android:layout_width="58dp"
+        android:layout_height="20dp"
+        android:text="@string/euo"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="114dp" />
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
+    <Button
+        android:id="@id/next1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="303dp"
+        tools:layout_editor_absoluteY="534dp" />
+
+    <ScrollView
+        android:layout_width="271dp"
+        android:layout_height="364dp"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="142dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button"
-            tools:layout_editor_absoluteX="195dp"
-            tools:layout_editor_absoluteY="105dp"
-            tools:ignore="MissingConstraints" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            android:orientation="vertical" />
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

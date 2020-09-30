@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">app_juan_navea</string>
+    <string name="euo">escoja una opcion:</string>
+    <string name="next">siguiente</string>
 </resources>
