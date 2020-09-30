@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-        <TextView
+    <TextView
         android:id="@id/text1"
         android:layout_width="58dp"
         android:layout_height="20dp"
@@ -28,7 +28,8 @@
         android:layout_width="271dp"
         android:layout_height="364dp"
         tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="142dp">
+        tools:layout_editor_absoluteY="142dp"
+        tools:ignore="MissingConstraints">
 
         <LinearLayout
             android:layout_width="match_parent"
