@@ -4,38 +4,140 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@id/text1"
-        android:layout_width="58dp"
-        android:layout_height="20dp"
-        android:text="@string/euo"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="114dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        tools:ignore="ExtraText"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
-    <Button
-        android:id="@id/next1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/next"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="303dp"
-        tools:layout_editor_absoluteY="534dp" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="@string/info"
+            android:textAlignment="center" />
 
-    <ScrollView
-        android:layout_width="271dp"
-        android:layout_height="364dp"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="142dp"
-        tools:ignore="MissingConstraints">
+        <EditText
+            android:id="@+id/titular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/titular"
+            tools:text="" />
+
+        <EditText
+            android:id="@+id/apell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/apell"
+            tools:text="" />
+
+        <EditText
+            android:id="@+id/num_tar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/num_tar"
+            tools:text="" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/mes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:hint="@string/dd"
+                android:inputType="numberDecimal"
+                android:textAppearance="?android:textAppearanceSmall"/>
+            <EditText
+                android:id="@+id/anio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:hint="@string/mm"
+                android:inputType="numberDecimal"
+                android:textAppearance="?android:textAppearanceSmall"/>
+            <EditText
+                android:id="@+id/cod"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:hint="@string/cod"
+                android:inputType="numberDecimal"
+                android:textAppearance="?android:textAppearanceSmall"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="15dp"
+            android:text="@string/direccion"/>
+
+        <EditText
+            android:id="@+id/derecedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/direcedit"
+            tools:text="" />
+
+        <EditText
+            android:id="@+id/ciudad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ciudad"
+            tools:text="" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/estado"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:hint="@string/estado"
+                android:textAppearance="?android:textAppearanceSmall"/>
+            <EditText
+                android:id="@+id/codpos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:hint="@string/codpos"
+                android:inputType="numberDecimal"
+                android:textAppearance="?android:textAppearanceSmall"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:onClick="guardar"
+            android:text="Guardar" />
+
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
