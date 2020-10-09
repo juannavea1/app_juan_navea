@@ -33,14 +33,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/titular"
-            tools:text="" />
+            tools:text=""
+            android:inputType=""
+            android:importantForAutofill="no" />
 
         <EditText
             android:id="@+id/apell"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/apell"
-            tools:text="" />
+            tools:text=""
+            android:importantForAutofill="no" />
 
         <EditText
             android:id="@+id/num_tar"
@@ -53,6 +56,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <EditText
                 android:id="@+id/mes"
                 android:layout_width="0dp"
@@ -61,7 +65,8 @@
                 android:layout_weight="1"
                 android:hint="@string/dd"
                 android:inputType="numberDecimal"
-                android:textAppearance="?android:textAppearanceSmall"/>
+                android:textAppearance="?android:textAppearanceSmall" />
+
             <EditText
                 android:id="@+id/anio"
                 android:layout_width="0dp"
@@ -70,16 +75,16 @@
                 android:layout_weight="1"
                 android:hint="@string/mm"
                 android:inputType="numberDecimal"
-                android:textAppearance="?android:textAppearanceSmall"/>
+                android:textAppearance="?android:textAppearanceSmall" />
+
             <EditText
                 android:id="@+id/cod"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:hint="@string/cod"
                 android:inputType="numberDecimal"
-                android:textAppearance="?android:textAppearanceSmall"/>
+                android:textAppearance="?android:textAppearanceSmall" />
         </LinearLayout>
 
         <TextView
@@ -88,7 +93,7 @@
             android:layout_height="wrap_content"
             android:paddingTop="10dp"
             android:paddingBottom="15dp"
-            android:text="@string/direccion"/>
+            android:text="@string/direccion" />
 
         <EditText
             android:id="@+id/derecedit"
@@ -116,7 +121,8 @@
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:hint="@string/estado"
-                android:textAppearance="?android:textAppearanceSmall"/>
+                android:textAppearance="?android:textAppearanceSmall" />
+
             <EditText
                 android:id="@+id/codpos"
                 android:layout_width="0dp"
@@ -125,7 +131,7 @@
                 android:layout_weight="1"
                 android:hint="@string/codpos"
                 android:inputType="numberDecimal"
-                android:textAppearance="?android:textAppearanceSmall"/>
+                android:textAppearance="?android:textAppearanceSmall" />
         </LinearLayout>
 
         <Button

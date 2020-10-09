@@ -12,6 +12,16 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     EditText titular,apell,numtar,dd,mm,cod,direcedit,ciudad,estado,codpos;
+    String n = titular.getText().toString();
+    String a = apell.getText().toString();
+    String t= numtar.getText().toString();
+    String mes = dd.getText().toString();
+    String anio = mm.getText().toString();
+    String codig = cod.getText().toString();
+    String d = direcedit.getText().toString();
+    String c = ciudad.getText().toString();
+    String e = estado.getText().toString();
+    String codp = codpos.getText().toString();
 
 
     @Override
@@ -33,6 +43,16 @@ public class MainActivity extends AppCompatActivity {
     public void guardar(View v){
         if (validar() == true){
         Intent guardar = new Intent(this, segundaActivity.class);
+        guardar.putExtra("dato", n);
+        guardar.putExtra("dato1", a);
+        guardar.putExtra("dato2", t);
+        guardar.putExtra("dato3", mes);
+        guardar.putExtra("dato4", anio);
+        guardar.putExtra("dato5", codig);
+        guardar.putExtra("dato6", d);
+        guardar.putExtra("dato7", c);
+        guardar.putExtra("dato8", e);
+        guardar.putExtra("dato9", codp);
         startActivity(guardar);
         }
     }
