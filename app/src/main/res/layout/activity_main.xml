@@ -34,8 +34,8 @@
             android:layout_height="wrap_content"
             android:hint="@string/titular"
             tools:text=""
-            android:inputType=""
             android:importantForAutofill="no" />
+
 
         <EditText
             android:id="@+id/apell"
@@ -83,6 +83,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
+                android:hint="@string/cod"
                 android:inputType="numberDecimal"
                 android:textAppearance="?android:textAppearanceSmall" />
         </LinearLayout>
@@ -139,8 +140,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:onClick="guardar"
-            android:text="Guardar" />
+            android:onClick="Registrar"
+            android:text="Registrar" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:onClick="Buscar"
+            tools:text="Buscar Tarjeta" />
 
 
     </LinearLayout>
